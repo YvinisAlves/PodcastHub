@@ -1,0 +1,62 @@
+:root{
+  --color-background: #F0F0F7;
+  --color-primary-lighter: #fff9b8;
+  --color-primary-light: #f9ed68;
+  --color-primary: #ffea00;
+  --color-primary-dark: #efd317;
+  --color-primary-darker: #e7bb22;
+  --color-secundary: #d30404;
+  --color-secundary-dark: #bf0404;
+  --color-title-in-primary: #FFFFFF;
+  --color-text-in-primary: #fff6c2;
+  --color-text-title: #4d4926;
+  --color-text-complement: #a6a498;
+  --color-text-base: #807361;
+  --color-line-in-white: #E6E6F0;
+  --color-input-background: #F8F8FC;
+  --color-button-text: #FFFFFF;
+  --color-box-base: #FFFFFF;
+  --color-box-footer: #FAFAFC;
+
+  font-size: 60%;
+}
+
+* {
+    /*Aplica a todos os elementos*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100vh; /* vh - Variable height, vw - Variable width*/
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea{
+    font: 500 1.6rem Poppins; /*rem - Tamanho relativo ao elemento root*/
+}
+
+.container {
+    width: 90vw;
+    max-width: 700px;
+}
+
+@media (min-width: 700px){
+    /*Valido só para dispositivos maiores que 700px */
+    .root {
+        font-size: 62.5%;
+    }
+}
